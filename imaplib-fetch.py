@@ -1,7 +1,7 @@
 import imaplib
-import imaplib_connect
+import imaplib-connect
 
-with imaplib_connect.open_connection() as c:
+with imaplib-connect.open_connection() as c:
     c.select('INBOX')
     typ, [msg_ids] = c.search(None, 'TEXT', 'keyword')
     for num in msg_ids.split():
